@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AJAX ->Asynchronous Javascript and XML</h1>
+    <div id="datadisplay"></div>
+
+
+    <script>
+        // let datadisplay = document.getElementById("datadisplay");
+        // let httpcreate = new XMLHttpRequest();
+        // httpcreate.open("GET","batch.txt");
+        // httpcreate.onload = function fetchdata(params) {
+        //     console.log(this.responseText);
+        //     datadisplay.innerHTML = this.responseText;            
+        // }
+        // httpcreate.send();
+        let datadisplay = document.getElementById("datadisplay");
+        let httpcreate = new XMLHttpRequest();
+        httpcreate.open("GET","another.json");
+        httpcreate.onload = function fetchdata(params) {
+            const sideremove  = JSON.parse(this.responseText);            
+            datadisplay.innerHTML = `Name: ${sideremove.myname} Age: ${sideremove.age} role: ${sideremove.role}`;            
+        }
+        httpcreate.send();
+    </script>
+</body>
+</html>
