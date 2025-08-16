@@ -1,0 +1,161 @@
+/* *{
+ margin: 0;
+ padding: 0;   
+} */
+.child2{
+    background-color: green;
+}
+.child1{
+    background-color: red;
+}
+.father{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    margin: 10px;
+    /* padding: 10px; */
+}
+.new{
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+.main{
+    background-color: orange;
+    /* display: flex; */
+}
+.box-1{
+    background-color: green;
+    width: 300px;
+    height: 100px;
+
+}
+.box-2{
+    background-color: blue;
+    width: 300px;
+    height: 100px;
+    /* position: fixed;
+    right: 0;
+    bottom: 0; */
+    /* position: sticky;
+    top: 10px;
+    left: 200px; */
+    /* position: absolute;
+    top: 650px; */
+    /* position: relative;
+    top: 500px;
+    left: 900px; */
+    /* margin-top: 500px; */
+}
+.box-3{
+    background-color: purple;
+    width: 300px;
+    height: 100px;
+    /* position: static;
+    top: 200px; */
+        /* position: fixed;
+    top: 10px; */
+}
+.box-4{
+    width: 300px;
+    height: 100px;
+    /* animation-name: redbox;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    position: relative  ; */
+    /* position: absolute;
+    top: 0; */
+    /* position -> relative,absolute,fixed and sticky. static */
+    /* margin-top: 100px; */
+    /* Animation has 2 types in css  -> fromto direction, and diagonal direction */
+
+}
+
+@keyframes redbox {
+    0%{
+        top: 0;
+        left: 0;
+        /* margin-top: 0px;
+        margin-left: 0px; */
+    }
+
+    50%{
+                top: 0px;
+        left: 500px;
+        /* margin-top: 500px;
+        margin-left: 500px;     */
+    }
+    100%{
+        top: 0;
+        left: 0;
+        /* margin-top: 0px;
+        margin-left: 0px; */
+    }
+}
+/* @keyframes redbox {
+    from{
+        margin-top: 0px;
+        position: relative;
+        top: 0;
+        border-radius: 0;
+    }
+    to{
+        margin-top: 600px;
+                position: relative;
+        top: 100px;
+        border-radius: 50%;
+
+    }
+} */
+.box-5{
+    background-color: chartreuse;
+    width: 300px;
+    height: 100px;
+}
+.box-6{
+    background-color: aqua;
+    width: 300px;
+    height: 100px;
+}
+
+/* .content{ */
+    /* color: green; */
+    /* hex values ->0 to f -> #withsixdigitnumber -> 0,1,2,3,4,5,6,7,8,9,10-a,11-b,12-c,13-d,14-e,15-f */
+    /* color: #000000; */
+    /* rgba - 0 to 255 - a - 0 to 1*/
+    /* color: rgba(0, 0, 0,.5); */
+    /* -webkit-text-stroke: #ff0000;
+    -webkit-text-stroke-width: 3px; */
+/* } */
+
+/* Pseduelements */
+/* ul li::marker{
+    content: '\2606';
+    color: red;
+    font-size: 20px;
+}
+*{
+    user-select: none;
+}
+
+::selection{
+    background-color: orange;
+    color: black;
+} */
+
+/* .h1::first-line{
+    color: red;
+} */
+/* .h1::first-letter{
+    color: red;
+    font-size: 60px;
+} */
+
+.h1:hover::before{
+    content: '\2606';
+    color: red;
+}

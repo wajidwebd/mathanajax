@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sizedecrease{
+    background-color: rgb(246, 246, 246);
+    width: 20%;
+}
+.image{
+    width: 100%;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+.mainsize{
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+}
+.size{
+    padding-left: 15px;
+}

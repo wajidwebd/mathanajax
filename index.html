@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MATHAN AJAX</title>
 </head>
 <body>
     <h1>AJAX ->Asynchronous Javascript and XML</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, iusto rem laudantium sapiente accusamus perspiciatis quam architecto earum? Cupiditate ut eaque non id? Facere, cupiditate quisquam error quas quae esse.</p>
     <div id="datadisplay"></div>
 
 
@@ -21,10 +22,15 @@
         // httpcreate.send();
         let datadisplay = document.getElementById("datadisplay");
         let httpcreate = new XMLHttpRequest();
-        httpcreate.open("GET","another.json");
+        httpcreate.open("GET","https://jsonplaceholder.typicode.com/comments");
         httpcreate.onload = function fetchdata(params) {
-            const sideremove  = JSON.parse(this.responseText);            
-            datadisplay.innerHTML = `Name: ${sideremove.myname} Age: ${sideremove.age} role: ${sideremove.role}`;            
+            const sideremove  = JSON.parse(this.responseText);
+            // console.log(sideremove);
+            sideremove.forEach(element => {
+                console.log(element);
+                
+                datadisplay.innerHTML += `Name: ${element.name} Age: ${element.email} role: ${element.body} <br>`;            
+            });           
         }
         httpcreate.send();
     </script>

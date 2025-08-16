@@ -1,0 +1,38 @@
+/* p{
+    color: orange;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .mathan{
+    color: red;
+    background-color: orange;
+    font-size: 20px;
+}
+#ipsum{
+    color: green;
+} */
+
+.mathan{
+    color: red;
+    /* background-color: orange; */
+    /* margin: 200px; */
+    /* margin: 100px 200px; */
+    /* margin: 10px 0px 0px 0px; */
+    /* margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 40px; */
+    /* padding: 100px; */
+    /* padding: 100px 200px; */
+    /* padding: 100px 200px 300px 400px; */
+    /* padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px; */
+}
+
+/* flex, position,grid,animation,website */
